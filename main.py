@@ -39,3 +39,7 @@ async def get_model(model_name: ModelName):
 @app.get("/files/{file_path:path}")
 async def get_file(file_path: str):
     return {"file_path": file_path}
+
+@app.get("/information/{type}") # Ex: http://localhost/information/balance?size=10&qty=2&model=other
+async def get_information(type: str, size: int, qty: int = 1, model: str | None = "default"):
+    return {"type": type, "size": size, "qty": qty, "model": model}

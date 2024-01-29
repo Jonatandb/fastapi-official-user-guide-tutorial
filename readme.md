@@ -22,3 +22,6 @@
 
 ## Parámetros de path
 - https://fastapi.tiangolo.com/es/tutorial/path-params/
+
+## Parámetros de query
+- https://fastapi.tiangolo.com/es/tutorial/query-params/
